@@ -66,7 +66,7 @@ const OTPInput = forwardRef(function (props, ref) {
       setBtnDisabled(false);
       setCountdown(30);
     };
-  }, []);
+  }, [focus]);
   const handleResendOtp = () => {
     if (!btnDisabled) {
       setBtnDisabled(true);

@@ -1,7 +1,7 @@
 import { forwardRef, useCallback } from "react";
 
 const TextInput = forwardRef(function (props, ref) {
-  const { name, value, onChange, label, labelFor, type = "text", isRequired = false, id = "", autoComplete = "off", placeholder, error, className } = props;
+  const { name, value, onChange, label, labelFor, type = "text", isRequired = false, id = "", autoComplete = "off", placeholder, error } = props;
   const labelComponent = useCallback((label, labelFor, isRequired) => (
     <label class="block text-500 text-sm font-medium mb-2" for={labelFor || ""}>
       {label} {isRequired && "*"}
