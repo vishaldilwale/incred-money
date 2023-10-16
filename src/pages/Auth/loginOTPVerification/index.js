@@ -11,8 +11,8 @@ const OTPVerification = () => {
   const submitBtnRef = useRef();
   const navigate = useNavigate();
 
-  const handleOtpChange=(value)=>{
-    console.log("value",value);
+  const handleOtpChange = (value) => {
+    console.log("value", value);
     setOtp(value)
   }
 
@@ -42,9 +42,9 @@ const OTPVerification = () => {
       </div>
       <div className='w-full md:w-6/12 h-1/2 md:h-screen' >
         <BannerForm onSubmit={handleSubmit} title={titleText} btnText="Next" disabled={!isValidOtp()} btnRef={submitBtnRef}>
-            <div className='max-w-[400px] my-[20px] mx-auto'>
-              <OTPInput error={error} onChange={handleOtpChange} verificationTo={`+91 ${mobileNumber}`}/>
-            </div>
+          <div className='max-w-[400px] my-[20px] mx-auto'>
+            <OTPInput error={error} onChange={handleOtpChange} verificationTo={`+91 ${mobileNumber}`} />
+          </div>
         </BannerForm>
       </div>
     </div>

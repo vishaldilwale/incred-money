@@ -46,7 +46,7 @@ const AboutUs = () => {
             {subTitleText}
 
             <div className="max-w-[400px] my-[20px] mx-auto">
-                            <SelectablePills isInline options={hearAboutUsOptions} selected={selectedSource} handleSelect={handleSelect}/>
+              <SelectablePills isInline options={hearAboutUsOptions} selected={selectedSource} handleSelect={handleSelect} />
             </div>
           </div>
         </BannerForm>

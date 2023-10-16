@@ -75,11 +75,11 @@ const ProfileDetails = () => {
         <BannerForm onSubmit={handleSubmit} title={titleText} btnText="Next">
           <div className='my-[20px] mx-auto'>
             <TextInput
-            name="fullname" id="fullname" value={user?.fullname}
-            onChange={(e) => handleInputChange(e)}
-            ref={fullNameRef}
-            type="text"
-            isRequired
+              name="fullname" id="fullname" value={user?.fullname}
+              onChange={(e) => handleInputChange(e)}
+              ref={fullNameRef}
+              type="text"
+              isRequired
               placeholder="Enter Your Name"
               label="Full Name"
               labelFor="fullname"
@@ -89,18 +89,18 @@ const ProfileDetails = () => {
             {marginComponent}
 
             <TextInput
-            name="email" id="email" value={user?.email}
-            onChange={(e) => handleInputChange(e)}
-            isRequired
+              name="email" id="email" value={user?.email}
+              onChange={(e) => handleInputChange(e)}
+              isRequired
               placeholder="Email"
               label="Email"
               labelFor="Email"
               error={error?.email && error?.email}
             />
             {marginComponent}
-                <TextInput
-            name="referralCode" id="referralCode" value={user?.referralCode}
-            onChange={(e) => handleInputChange(e)}
+            <TextInput
+              name="referralCode" id="referralCode" value={user?.referralCode}
+              onChange={(e) => handleInputChange(e)}
               placeholder="Enter Referral Code"
               label="Referral Code"
               labelFor="referralCode"

@@ -41,7 +41,7 @@ const LoginMobile = () => {
       </div>
       <div className='w-full md:w-6/12 h-1/2 md:h-screen' >
         <BannerForm onSubmit={handleSubmit} title={titleText} btnText="Next">
-          <MobileInput type="number" value={mobileNumber} onChange={handleInputChange} error={error}/>
+          <MobileInput type="number" value={mobileNumber} onChange={handleInputChange} error={error} />
         </BannerForm>
       </div>
     </div>

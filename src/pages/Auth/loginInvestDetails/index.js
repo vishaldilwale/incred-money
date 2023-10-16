@@ -35,7 +35,7 @@ const InvestDetails = () => {
           <div>
             {subTitleText}
             <div className='max-w-[400px] my-[20px] mx-auto'>
-              <SelectablePills options={investOptions} selected={selectedOption} handleSelect={handleSelect}/>
+              <SelectablePills options={investOptions} selected={selectedOption} handleSelect={handleSelect} />
             </div>
           </div>
         </BannerForm>

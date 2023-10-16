@@ -17,7 +17,7 @@ const BannerForm = (props) => {
           <div className='pb-5 w-[365px] max-w-[88%] md:max-w-full m-auto absolute inset-x-0 bottom-1 md:relative md:p-0'>
             <p className="text-[10.5px] leading-4 font-light text-gray-500 mt-[70px] mb-[20px] mx-auto md:text-[12px] md:text-gray-700">By proceeding, I accept the <span className={`text-[12px] text-[#0051D3] font-light leading-4 underline my-[20px]`}>
               <a rel="noreferrer" target="_blank" href={PATH.termsAndConditions}>Terms & Conditions</a>
-              </span>, and agree to receive messages such as OTPs & important updates on WhatsApp.</p>
+            </span>, and agree to receive messages such as OTPs & important updates on WhatsApp.</p>
             <button
               type="button"
               disabled={disabled}
